@@ -1,8 +1,8 @@
 from sc.textfile import txtfile
 
 file_ext = '.txt|.csv'
-yourpath = 'D:/Projects/GHY/汉语语例溯源系统库'
-yourfile = '../txt/03古典相关/红楼梦/红楼梦.txt'
+singleFilePath = '../txt/03古典相关/红楼梦/红楼梦.txt'
+dirPath = 'D:/Projects/GHY/汉语语例溯源系统库'
 
 # 函数声明开始
 def allpath_txt(yourpath, file_ext):
@@ -19,11 +19,13 @@ def file_txt(yourfile, file_ext):
 if __name__ == '__main__':
     # 入口：
 
+    print('start')
+
     # 整体转换一个目录（含子目录）下所有文件
-    allpath_txt(yourpath,file_ext)
+    allpath_txt(dirPath,file_ext)
 
     # 整体转换一个目录（不含子目录）下所有文本文件
-    #path_txt(yourpath, file_ext)
+    #path_txt(dirPath, file_ext)
 
     # 单独转换一个文件
-    #file_txt(yourfile, file_ext)
+    #file_txt(singleFilePath, file_ext)
